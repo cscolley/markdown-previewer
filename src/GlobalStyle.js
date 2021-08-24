@@ -16,34 +16,21 @@ export const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
     font-family: "Abel", sans-serif;
+    color: var(--darkGrey);
   }
 
   body {
     margin: 0;
     padding: 0;
-
-    h1 {
-      font-size: 2rem;
-      font-weight: 600;
-      color: var(--white);
-    }
-
-    h3 {
-      font-size: 1.1.rem;
-      font-weight: 600;
-    }
-
-    p {
-      font-size: 1rem;
-      color: var(--white);
-    }
+    height: 100%;
   }
 
   .App {
     min-height: 100vh; /* will cover the 100% of viewport */
-    overflow: hidden;
-    display: block;
     position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: stretch;
     padding-bottom: 100px; /* height of your footer */
   }
 `;

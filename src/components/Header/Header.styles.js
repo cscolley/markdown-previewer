@@ -27,4 +27,5 @@ export const MarkedLogoImg = styled.img`
 
 export const Title = styled.h1`
   font-size: var(--fontSuperBig);
+  color: var(--white);
 `;

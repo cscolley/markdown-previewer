@@ -18,9 +18,9 @@ export const Content = styled.div`
   gap: 3rem;
 
   a {
-    color: var(--white);
     font-size: var(--fontMed);
     text-decoration: none;
+    color: var(--white);
 
     &:hover {
       color: green;
@@ -29,6 +29,7 @@ export const Content = styled.div`
 
     i {
       font-size: var(--fontSuperBig);
+      color: var(--white);
     }
   }
 `;
