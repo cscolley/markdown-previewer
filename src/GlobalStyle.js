@@ -31,7 +31,7 @@ export const GlobalStyle = createGlobalStyle`
     align-items: stretch;
     padding-bottom: 80px; /* height of your footer */
 
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: 900px) {
       height: 100vh;
     }
   }

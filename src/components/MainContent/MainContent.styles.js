@@ -13,6 +13,11 @@ export const Wrapper = styled.div`
   flex: 1 1 100%;
   flex-direction: row;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 900px) {
+    width: 97%;
+    height: 70vh;
+  }
 `;
 
 export const Panel = styled.div`
@@ -26,7 +31,7 @@ export const Panel = styled.div`
   flex: 1 1 auto;
   height: 100%;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     width: 100%;
     height: 70vh;
   }
