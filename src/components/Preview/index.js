@@ -1,6 +1,8 @@
 import React from "react";
 import marked from "marked";
-import Prism from 'prismjs';
+import Prism from "prismjs";
+
+import { Wrapper } from "./Preview.styles";
 
 const Preview = ({ markdownValue }) => {
   // ALLOWS LINE BREAKS WITH RETURN BUTTON
@@ -18,11 +20,19 @@ const Preview = ({ markdownValue }) => {
   };
 
   return (
-    <div
-      dangerouslySetInnerHTML={{
-        __html: marked(markdownValue, { renderer }),
-      }}
-    />
+    <Wrapper>
+      <div className="title">
+        <h1>Preview</h1>
+      </div>
+      <div className="previewOuterDiv">
+        <div
+          id="preview"
+          dangerouslySetInnerHTML={{
+            __html: marked(markdownValue, { renderer }),
+          }}
+        />
+      </div>
+    </Wrapper>
   );
 };
 

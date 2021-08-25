@@ -1,19 +1,39 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  width: 45%;
-  border: 4px solid var(--darkGrey);
-  border-radius: 15px;
-  padding: 10px;
-  flex-grow: 1;
-
-  @media screen and (max-width: 768px) {
-    width: 100%;
-  }
-`;
-
-export const Content = styled.div`
-  width: 100%;
   height: 100%;
-  border: 1px solid var(--medGrey);
+
+  .title {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--darkGrey);
+    border-radius: 13px 13px 0 0;
+
+    h1 {
+      color: var(--white);
+      margin: 0;
+    }
+  }
+
+  .editorDiv {
+    height: 100%;
+    border-radius: 0 0 13px 13px;
+    overflow: hidden;
+    height: calc(100% - 60px);
+    border: 1px solid var(--medGrey);
+
+    #editor {
+      resize: none;
+      padding: 5px;
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+      overflow-y: auto;
+      overflow-wrap: break-word;
+      font-size: 16px;
+      border: none;
+    }
+  }
 `;
