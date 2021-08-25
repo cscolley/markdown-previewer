@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
   position: absolute;
   bottom: 0;
   width: 100%;
+  height: 80px;
 `;
 
 export const Content = styled.div`
@@ -16,6 +17,7 @@ export const Content = styled.div`
   padding: 20px 0;
   margin: 0 auto;
   gap: 3rem;
+  height: 100%;
 
   a {
     font-size: var(--fontMed);

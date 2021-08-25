@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   background: var(--darkGrey);
   padding: 0 20px;
+  height: 150px;
 `;
 
 export const Content = styled.div`
@@ -13,6 +14,7 @@ export const Content = styled.div`
   padding: 20px 0;
   margin: 0 auto;
   gap: 1rem;
+  height: 100%;
 `;
 
 export const LogoContainer = styled.div`
